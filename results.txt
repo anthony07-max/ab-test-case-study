@@ -1,0 +1,28 @@
+Rows: 90189 | duplicate userids: 0 | missing: 0
+Versions: ['gate_30', 'gate_40']
+Outlier sum_gamerounds max: 49854
+Group sizes: {'gate_40': 45489, 'gate_30': 44699}
+SRM chi-square p = 0.0085 (SRM!)
+
+retention_1: gate_30 44.8198% (n=44699) | gate_40 44.2283% (n=45489)
+  diff (40-30) = -0.592 pp, relative -1.32%
+  z = -1.787, p = 0.0739, 95% CI [-1.240, 0.057] pp
+  bootstrap 95% CI [-1.256, 0.048] pp
+  Bayesian P(gate_30 > gate_40) = 0.9615
+  MDE at 80% power, alpha .05: ~0.93 pp | power to detect observed diff: 43.15%
+
+retention_7: gate_30 19.0183% (n=44699) | gate_40 18.2000% (n=45489)
+  diff (40-30) = -0.818 pp, relative -4.30%
+  z = -3.157, p = 0.0016, 95% CI [-1.326, -0.310] pp
+  bootstrap 95% CI [-1.333, -0.329] pp
+  Bayesian P(gate_30 > gate_40) = 0.9993
+  MDE at 80% power, alpha .05: ~0.73 pp | power to detect observed diff: 88.44%
+
+Segment: 7-day retention by rounds played
+            mean            size        
+version  gate_30 gate_40 gate_30 gate_40
+engage                                  
+0 rounds  0.0083  0.0063    1937    2057
+1-29      0.0451  0.0418   26107   26819
+30-39     0.1573  0.1569    3090    2786
+40+       0.5028  0.4851   13565   13827
